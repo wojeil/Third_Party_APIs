@@ -29,7 +29,17 @@ $(".saveBtn").on("click", function(){
 
 
 
-$("#text9").text(localStorage.getItem("nIne"));
+//$("#text9").text(localStorage.getItem("nIne"));
+
+for (let i = 0; i < localStorage.length; i++) {
+
+    var key = localStorage.key[i];
+    var lock = localStorage.getItem(key);
+
+    $()
+    
+    
+}
    
     
 
