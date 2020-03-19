@@ -27,16 +27,23 @@ $(".saveBtn").on("click", function(){
     localStorage.setItem(time, value);
 })
 
-
-
+var K = ["nIne","tEn","eLeven","tWelve","oNe","tWo","tHree","fOur","fIve"];
+var Area =["text9","text10","text11","text12","text1","text2","text3","text4","text5"];
 //$("#text9").text(localStorage.getItem("nIne"));
 
-for (let i = 0; i < localStorage.length; i++) {
+for (let i = 0; i < K.length; i++) {
 
-    var key = localStorage.key[i];
-    var lock = localStorage.getItem(key);
+var cool = localStorage.getItem(K[i]);
 
-    $()
+
+console.log(localStorage.getItem(K[i]));
+
+if(cool === null) {
+    
+}
+
+
+    
     
     
 }
