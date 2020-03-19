@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 
 
-    //adding an event listener to text content:
+//adding an event listener to text content:
 
     $(".saveBtn").on("click", function () {
         //get nearby values using siblings method:
