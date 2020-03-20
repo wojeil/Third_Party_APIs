@@ -14,20 +14,21 @@ $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'))
     var today = new Date();
     var hour = today.getHours();
     console.log(hour);
-//We use the loop 
+//Use the loop to go over all the text areas on the html 
     for (var i = 0; i < Area.length; i++) {
-   
+//Set a data time into a variable.
     var data = $(Area[i]).attr("data-time");
-    parseInt(data)
-
+//Change the string to a number to use in if statement.
+    data= parseInt(data);
+// Future if
     if(hour < data ) {
         $(Area[i]).addClass("col-md-10 future description")
     }
-
-    if(hour == data ) {
+// Present if
+    if(hour === data ) {
         $(Area[i]).addClass("col-md-10 present description")
     }
-
+// Past if
     if(hour > data ) {
         $(Area[i]).addClass("col-md-10 past description")
     }
