@@ -8,8 +8,32 @@ $(document).ready(function () {
 
     //Adding text to local Storage
     //localStorage.setItem()
+    var today = new Date();
+    var hour = today.getHours();
+    
+    var plannerHours = $(".hour")
+console.log(plannerHours);
 
-    //var hour = today.get(Hours())\\
+    //make a for loop  to run through the hours:
+
+    for (let j = 0; j < K.length; j++) {
+
+        if(hour == parseInt(K[j])) {
+
+            $(Area[j]).addClass(".present");
+        }
+        
+        
+    }
+
+
+   // if (hour < parseInt(".hour"))
+
+
+
+    
+    
+    console.log(hour);
     //if html < {}
     //addClass ("blue")
 
@@ -26,7 +50,7 @@ $(document).ready(function () {
         //saves it in local storage.
         localStorage.setItem(time, value);
     })
-
+    //Global Arrays
     var K = ["nIne", "tEn", "eLeven", "tWelve", "oNe", "tWo", "tHree", "fOur", "fIve"];
     var Area = ["#text9", "#text10", "#text11", "#text12", "#text1", "#text2", "#text3", "#text4", "#text5"];
     //$("#text9").text(localStorage.getItem("nIne"));
