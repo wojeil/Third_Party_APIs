@@ -3,10 +3,10 @@ $(document).ready(function () {
 var K = ["nIne", "tEn", "eLeven", "tWelve", "oNe", "tWo", "tHree", "fOur", "fIve"];
 var Area = ["#text9", "#text10", "#text11", "#text12", "#text1", "#text2", "#text3", "#text4", "#text5"];
 
-//Setting Time 
-$("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'))
-
-//setInterval(moment(), 1000),
+//Setting Time and getting seconds to run live.
+setInterval(function() {
+    $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'))
+}, 1000)
 
   
 
