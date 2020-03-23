@@ -16,7 +16,7 @@ setInterval(function() {
     console.log(hour);
 //Use the loop to go over all the text areas on the html 
     for (var i = 0; i < Area.length; i++) {
-//Set a data time into a variable.
+//Set a data time into a variable from html.
     var data = $(Area[i]).attr("data-time");
 //Change the string to a number to use in if statement.
     data= parseInt(data);
