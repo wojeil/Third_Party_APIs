@@ -1,6 +1,6 @@
 # The Day Planner
 
-<img src= (https://user-images.githubusercontent.com/60321934/82580850-bfc76100-9b5d-11ea-9ad8-3bb3a71708f5.png) width="100" height="100">
+<img src= "./Assets/appImage.png" width="350" height="200">
 
 
 Project Title
@@ -16,6 +16,9 @@ page.
 
 Deployment
 GitHUb
+
+Try Me Live
+<a href="https://wojeil.github.io/Third_Party_APIs/">https://wojeil.github.io/Third_Party_APIs/</a>
 
 Built With
 HTML5
